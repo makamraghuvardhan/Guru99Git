@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32690" started-at="2018-07-25T18:23:05Z" finished-at="2018-07-25T18:23:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32690" started-at="2018-07-25T18:23:05Z" finished-at="2018-07-25T18:23:38Z">
+      <class name="com.org.webApplication.Framework.TestOne">
+        <test-method status="PASS" signature="initialiseBrw()[pri:0, instance:com.org.webApplication.Framework.TestOne@91e32e]" name="initialiseBrw" is-config="true" duration-ms="10436" started-at="2018-07-25T18:23:05Z" finished-at="2018-07-25T18:23:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseBrw -->
+        <test-method status="PASS" signature="verifyLoginSession()[pri:1, instance:com.org.webApplication.Framework.TestOne@91e32e]" name="verifyLoginSession" duration-ms="3249" started-at="2018-07-25T18:23:16Z" finished-at="2018-07-25T18:23:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginSession -->
+        <test-method status="PASS" signature="verifyAllLinksAvailable()[pri:2, instance:com.org.webApplication.Framework.TestOne@91e32e]" name="verifyAllLinksAvailable" duration-ms="14833" started-at="2018-07-25T18:23:19Z" finished-at="2018-07-25T18:23:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllLinksAvailable -->
+        <test-method status="PASS" signature="createNewCustomer()[pri:3, instance:com.org.webApplication.Framework.TestOne@91e32e]" name="createNewCustomer" duration-ms="2728" started-at="2018-07-25T18:23:34Z" finished-at="2018-07-25T18:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewCustomer -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.org.webApplication.Framework.TestOne@91e32e]" name="closeBrowser" is-config="true" duration-ms="1399" started-at="2018-07-25T18:23:36Z" finished-at="2018-07-25T18:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.org.webApplication.Framework.TestOne -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
