@@ -17,19 +17,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class InitializeBrowser {
 	public WebDriver driver;
 	public Properties pro = new Properties();
-	String pathofPropertyFile = "/home/raghu/eclipse-workspace/Framework/config.properties";
+	String pathofPropertyFile = "/home/raghu/git/Guru99Git/Framework/config.properties";
 	
 	public void callingBrowser() throws IOException {
 		InputStream file = new FileInputStream(pathofPropertyFile);
 		pro.load(file);
 		switch (pro.getProperty("browser")) {
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver","/home/raghu/eclipse-workspace/Framework/Drivers/geckodriver");
+			System.setProperty("webdriver.chrome.driver","/home/raghu/git/Guru99Git/Framework/Drivers/geckodriver");
 			driver = new ChromeDriver();
 			getURL_AndMax();
 			break;
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver","/home/raghu/eclipse-workspace/Framework/Drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver","/home/raghu/git/Guru99Git/Framework/Drivers/geckodriver");
 			driver =new FirefoxDriver();
 			getURL_AndMax();
 			break;
@@ -50,7 +50,7 @@ public class InitializeBrowser {
 	{
 		SimpleDateFormat dtf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 		File sourcefiledir = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(sourcefiledir, new File("/home/raghu/eclipse-workspace/Framework/Screen/"+(dtf.format(new Date())+".png")));
+		FileUtils.copyFile(sourcefiledir, new File("/home/raghu/git/Guru99Git/Framework/Screen/"+(dtf.format(new Date())+".png")));
 	}
 
 }
