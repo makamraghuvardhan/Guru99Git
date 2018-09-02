@@ -1,5 +1,6 @@
 package com.org.webApplication.Framework;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -13,10 +14,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.org.webApplication.pageElements.Guru99_HomePage;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import jxl.JXLException;
 
 public class TestOne extends Guru99_HomePage{
+	ExtentReports report;
+	ExtentTest logger;
 	Guru99_HomePage guru99hp = new Guru99_HomePage();
 	
 	HttpURLConnection huc = null;
